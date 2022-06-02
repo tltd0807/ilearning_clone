@@ -280,3 +280,37 @@ label {
   font-size: 1.2rem;
   text-align: center;
 }
+.section__dark {
+  background-color: rgb(6, 6, 6);
+  margin: auto;
+  width: 73%;
+  padding: 50px 0;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+}
+.section__dark__img__container {
+  text-align: right;
+  /* padding-left: 80px; */
+}
+.section__dark__img {
+  width: auto;
+  height: 85%;
+  padding: 15px 0;
+}
+.section__dark__content {
+  margin: 0 100px 0 80px;
+}
+.section__dark__content__header {
+  font-size: 2rem;
+}
+.section__dark__content__pricetag {
+  font-size: 2rem;
+  color: #15cca3;
+  padding: 13px 0 25px;
+}
+.section__dark__content__paragraph {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #959595;
+}
