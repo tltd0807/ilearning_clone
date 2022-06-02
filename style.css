@@ -8,9 +8,13 @@ body {
   /* height: 100vh; */
   position: relative;
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 .navigation {
   background-color: #383d40;
-  position: sticky;
 }
 .navigation__menu {
   display: flex;
