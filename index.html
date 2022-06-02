@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>https://ilearning.developteam.net</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="navigation__menu">
+          <div class="navigation__item">
+            <img
+              class="navigation__logo"
+              src="https://ilearning.developteam.net/static/media/iLearningLogoDesktop.daf07626.svg"
+              alt="ilearning-logo"
+            />
+          </div>
+
+          <div class="navigation__item">
+            <div class="navigation__item--gray">Trang chủ</div>
+            <div class="navigation__item--gray">Nội dung khóa học</div>
+            <div class="navigation__item--gray">Khóa học</div>
+            <div class="navigation__item--gray">Đánh giá</div>
+            <div class="navigation__item--gray">Tin tức</div>
+            <div class="navigation__item--gray">Doanh nghiệp</div>
+          </div>
+
+          <button class="navigation__button">Liên hệ tư vấn</button>
+        </div>
+      </nav>
+    </header>
+    <div class="contact__modal hidden">
+      <div class="contact__header">
+        <p>Thông tin liên hệ</p>
+        <span class="closing">X</span>
+      </div>
+      <form class="form__container" action="">
+        <div class="form--secondline">
+          <div class="form__input--2line">
+            <label>Họ và tên</label> <br />
+            <input
+              type="text"
+              placeholder="Vui lòng nhập Họ và Tên"
+              class="form__input input__2 input--boder"
+            />
+          </div>
+          <div class="form__input--2line"></div>
+        </div>
+        <div class="form--secondline">
+          <div class="form__input--2line">
+            <label>Email</label>
+            <br />
+            <input
+              type="email"
+              placeholder="Vui lòng nhập Email"
+              class="form__input input__2 input--boder"
+            />
+          </div>
+          <div class="form__input--2line">
+            <label>Số điện thoại</label> <br />
+            <input
+              type="tel"
+              placeholder="Vui lòng nhập Số điện thoại"
+              class="form__input input__2 input--boder"
+            />
+          </div>
+        </div>
+        <div class="form__input--2line input__last">
+          <label>Lời nhắn</label> <br />
+          <textarea
+            placeholder="Vui lòng tư vấn lại cho tôi"
+            class=""
+          ></textarea>
+        </div>
+      </form>
+      <footer class="contact__footer">
+        <button class="footer__button">Gửi</button>
+      </footer>
+    </div>
+
+    <section class="slideshow-container">
+      <div class="section__header mySlides">
+        <div class="section__box">
+          <div class="section__header__box">
+            <h3>Chương trình đào tạo CNTT</h3>
+          </div>
+          <div class="section__body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque, reprehenderit nisi! Voluptates odio dignissimos ab
+              repellat molestiae. Perspiciatis dolore illum repellendus corrupti
+              aliquid libero obcaecati ipsa, adipisci dolorem asperiores unde.
+            </p>
+          </div>
+          <div class="section__footer">
+            <button class="footer__button section__button">Đăng ký ngay</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__header mySlides">
+        <div class="section__box">
+          <div class="section__header__box">
+            <h3>Chương trình học mang lại kiến thức tổng quan để đi làm</h3>
+          </div>
+          <div class="section__body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque, reprehenderit nisi! Voluptates odio dignissimos ab
+              repellat molestiae. Perspiciatis dolore illum repellendus corrupti
+              aliquid libero obcaecati ipsa, adipisci dolorem asperiores unde.
+            </p>
+          </div>
+          <div class="section__footer">
+            <button class="footer__button section__button">Chi tiết</button>
+          </div>
+        </div>
+      </div>
+      <div class="slidesDot">
+        <span class="dot" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+      </div>
+    </section>
+    <section class="video__container">
+      <iframe
+        class="iframe--video"
+        src="https://www.youtube.com/embed/UMT2H15tSI0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+    </section>
+
+    <section class="section__note">
+      <div class="section__note__header">
+        Bạn đã tự tin để trở thành Senior Software Engineer?
+      </div>
+      <div class="section__note__paragraph">
+        Ngành IT đang ngày càng phát triển và thay đổi nhanh chóng. Từ đó, chất
+        lượng các kỹ sư cũng ngày càng được yêu cầu khắc khe hơn. Chúng tôi thấu
+        hiểu những khó khăn trên con đường trở thành Senior Software Engineer và
+        tự tin giúp bạn có thể thực hiện được điều đó.
+      </div>
+    </section>
+    <footer></footer>
+    <div class="blur hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
