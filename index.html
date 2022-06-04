@@ -31,55 +31,55 @@
           <button class="navigation__button">Liên hệ tư vấn</button>
         </div>
       </nav>
-    </header>
-    <div class="contact__modal hidden">
-      <div class="contact__header">
-        <p>Thông tin liên hệ</p>
-        <span class="closing">X</span>
+      <div class="contact__modal hidden">
+        <div class="contact__header">
+          <p>Thông tin liên hệ</p>
+          <span class="closing">X</span>
+        </div>
+        <form class="form__container" action="">
+          <div class="form--secondline">
+            <div class="form__input--2line">
+              <label>Họ và tên</label> <br />
+              <input
+                type="text"
+                placeholder="Vui lòng nhập Họ và Tên"
+                class="form__input input__2 input--boder"
+              />
+            </div>
+            <div class="form__input--2line"></div>
+          </div>
+          <div class="form--secondline">
+            <div class="form__input--2line">
+              <label>Email</label>
+              <br />
+              <input
+                type="email"
+                placeholder="Vui lòng nhập Email"
+                class="form__input input__2 input--boder"
+              />
+            </div>
+            <div class="form__input--2line">
+              <label>Số điện thoại</label> <br />
+              <input
+                type="tel"
+                placeholder="Vui lòng nhập Số điện thoại"
+                class="form__input input__2 input--boder"
+              />
+            </div>
+          </div>
+          <div class="form__input--2line input__last">
+            <label>Lời nhắn</label> <br />
+            <textarea
+              placeholder="Vui lòng tư vấn lại cho tôi"
+              class=""
+            ></textarea>
+          </div>
+        </form>
+        <footer class="contact__footer">
+          <button class="footer__button">Gửi</button>
+        </footer>
       </div>
-      <form class="form__container" action="">
-        <div class="form--secondline">
-          <div class="form__input--2line">
-            <label>Họ và tên</label> <br />
-            <input
-              type="text"
-              placeholder="Vui lòng nhập Họ và Tên"
-              class="form__input input__2 input--boder"
-            />
-          </div>
-          <div class="form__input--2line"></div>
-        </div>
-        <div class="form--secondline">
-          <div class="form__input--2line">
-            <label>Email</label>
-            <br />
-            <input
-              type="email"
-              placeholder="Vui lòng nhập Email"
-              class="form__input input__2 input--boder"
-            />
-          </div>
-          <div class="form__input--2line">
-            <label>Số điện thoại</label> <br />
-            <input
-              type="tel"
-              placeholder="Vui lòng nhập Số điện thoại"
-              class="form__input input__2 input--boder"
-            />
-          </div>
-        </div>
-        <div class="form__input--2line input__last">
-          <label>Lời nhắn</label> <br />
-          <textarea
-            placeholder="Vui lòng tư vấn lại cho tôi"
-            class=""
-          ></textarea>
-        </div>
-      </form>
-      <footer class="contact__footer">
-        <button class="footer__button">Gửi</button>
-      </footer>
-    </div>
+    </header>
 
     <section class="slideshow-container">
       <div class="section__header mySlides">
@@ -170,6 +170,139 @@
         </div>
       </div>
     </section>
+
+    <section class="section__dark">
+      <div class="section__dark__content section__dark--noImg">
+        <div class="section__dark__content__header section__dark--bold">
+          Giáo trình
+        </div>
+
+        <div onclick="dropDown(0)" class="section__dark__content__box dropbtn">
+          <div class="box_header">
+            <div class="box_header--padding">
+              I. Khoá học ReactJS – Xây dựng chức năng Github với GraphQL
+            </div>
+            <img
+              id="plus0"
+              class="dropdown__img"
+              src="https://ilearning.developteam.net/static/media/plusMark.acf9b383.svg"
+              alt=""
+              width="40"
+              height="40"
+            />
+          </div>
+
+          <ul class="section__list">
+            <li class="section__list__items">
+              Môn 1: Nhập môn Xây dựng website đầu tiên
+            </li>
+            <li class="section__list__items">
+              Môn 2: Kết nối thông tin đa dạng
+            </li>
+            <li class="section__list__items">
+              Môn 3: Cập nhật trạng thái dịch vụ
+            </li>
+            <li class="section__list__items">
+              Môn 4: Hoàn tất dịch vụ an toàn và chất lượng
+            </li>
+          </ul>
+        </div>
+
+        <div onclick="dropDown(1)" class="section__dark__content__box dropbtn">
+          <div class="box_header">
+            <div class="box_header--padding">
+              II. Khoá học ReactJS – Xây dựng chức năng Github với GraphQL
+            </div>
+            <img
+              id="plus1"
+              class="dropdown__img"
+              src="https://ilearning.developteam.net/static/media/plusMark.acf9b383.svg"
+              alt=""
+              width="40"
+              height="40"
+            />
+          </div>
+
+          <ul class="section__list">
+            <li class="section__list__items">
+              Môn 1: Nhập môn Xây dựng website đầu tiên
+            </li>
+            <li class="section__list__items">
+              Môn 2: Kết nối thông tin đa dạng
+            </li>
+            <li class="section__list__items">
+              Môn 3: Cập nhật trạng thái dịch vụ
+            </li>
+            <li class="section__list__items">
+              Môn 4: Hoàn tất dịch vụ an toàn và chất lượng
+            </li>
+          </ul>
+        </div>
+
+        <div onclick="dropDown(2)" class="section__dark__content__box dropbtn">
+          <div class="box_header">
+            <div class="box_header--padding">
+              III. Khoá học ReactJS – Xây dựng chức năng Github với GraphQL
+            </div>
+            <img
+              id="plus2"
+              class="dropdown__img"
+              src="https://ilearning.developteam.net/static/media/plusMark.acf9b383.svg"
+              alt=""
+              width="40"
+              height="40"
+            />
+          </div>
+
+          <ul class="section__list">
+            <li class="section__list__items">
+              Môn 1: Nhập môn Xây dựng website đầu tiên
+            </li>
+            <li class="section__list__items">
+              Môn 2: Kết nối thông tin đa dạng
+            </li>
+            <li class="section__list__items">
+              Môn 3: Cập nhật trạng thái dịch vụ
+            </li>
+            <li class="section__list__items">
+              Môn 4: Hoàn tất dịch vụ an toàn và chất lượng
+            </li>
+          </ul>
+        </div>
+
+        <div onclick="dropDown(3)" class="section__dark__content__box dropbtn">
+          <div class="box_header">
+            <div class="box_header--padding">
+              IV. Khoá học ReactJS – Xây dựng chức năng Github với GraphQL
+            </div>
+            <img
+              id="plus3"
+              class="dropdown__img"
+              src="https://ilearning.developteam.net/static/media/plusMark.acf9b383.svg"
+              alt=""
+              width="40"
+              height="40"
+            />
+          </div>
+
+          <ul class="section__list">
+            <li class="section__list__items">
+              Môn 1: Nhập môn Xây dựng website đầu tiên
+            </li>
+            <li class="section__list__items">
+              Môn 2: Kết nối thông tin đa dạng
+            </li>
+            <li class="section__list__items">
+              Môn 3: Cập nhật trạng thái dịch vụ
+            </li>
+            <li class="section__list__items">
+              Môn 4: Hoàn tất dịch vụ an toàn và chất lượng
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <footer></footer>
     <div class="blur hidden"></div>
     <script src="script.js"></script>
