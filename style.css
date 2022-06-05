@@ -5,8 +5,8 @@
 }
 body {
   background-color: rgba(8, 9, 15, 0.888);
-
   position: relative;
+  overflow-x: hidden;
 }
 header {
   position: sticky;
