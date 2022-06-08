@@ -78,3 +78,33 @@ function dropDown(id) {
       "https://ilearning.developteam.net/static/media/plusMark.acf9b383.svg";
   }
 }
+
+//cmt slideshow
+let cmtSlides = document.getElementsByClassName("multi_ele_slideshow__element");
+let cmtDot = document.getElementsByClassName("dot--small");
+console.log(cmtDot);
+console.log(cmtSlides);
+for (let i = 3; i < cmtSlides.length; i++) {
+  cmtSlides[i].style.display = "none";
+}
+cmtDot[0].className += " active";
+const activeDot = function (currentSlide) {
+  for (let i = 0; i < cmtDot.length; i++)
+    cmtDot[i].className = cmtDot[i].className.replace(" active", "");
+  cmtDot[currentSlide].className += " active";
+};
+const activeElement = function (startElement, endElement) {
+  for (let i = 0; i < cmtSlides.length; i++) {
+    cmtSlides[i].style.display = "none";
+  }
+  for (let i = startElement; i < endElement; i++) {
+    cmtSlides[i].style.display = "flex";
+  }
+};
+function showCmtSlide(currentSlide) {
+  const startElement = currentSlide + 3;
+  const endElement = startElement + 3;
+
+  activeElement(startElement, endElement);
+  activeDot(currentSlide);
+}
