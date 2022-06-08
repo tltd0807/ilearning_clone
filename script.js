@@ -101,8 +101,9 @@ const activeElement = function (startElement, endElement) {
     cmtSlides[i].style.display = "flex";
   }
 };
+const startArr = [0, 3, 6, 7];
 function showCmtSlide(currentSlide) {
-  const startElement = currentSlide + 3;
+  const startElement = startArr[currentSlide];
   const endElement = startElement + 3;
 
   activeElement(startElement, endElement);

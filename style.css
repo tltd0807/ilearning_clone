@@ -444,6 +444,7 @@ label {
   justify-content: center;
   margin-bottom: 40px;
   overflow: hidden;
+  padding: 0 250px;
 }
 .multi_ele_slideshow__element {
   width: 460px;
@@ -490,4 +491,24 @@ label {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 250px;
+  margin-bottom: 50px;
+}
+.news__header {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.img__nav {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.img_nav_right {
+  transform: rotate(0.5turn);
 }
