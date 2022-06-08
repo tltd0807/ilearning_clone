@@ -497,7 +497,7 @@ label {
   display: flex;
   justify-content: space-between;
   padding: 0 250px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .news__header {
   color: white;
@@ -512,3 +512,30 @@ label {
 .img_nav_right {
   transform: rotate(0.5turn);
 }
+.news_body {
+  padding: 0 250px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.news_tag__container {
+  /* height: 320px; */
+  background-color: rgb(6, 6, 6);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: #959595;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.news_tag__img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.news_tag__info {
+  font-size: 1.1rem;
+}
+/* còn thiêu ở tab 5 mấy chữ bị overflow đổi thành ... và model khi click vào tab */
