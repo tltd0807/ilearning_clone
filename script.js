@@ -109,3 +109,59 @@ function showCmtSlide(currentSlide) {
   activeElement(startElement, endElement);
   activeDot(currentSlide);
 }
+
+// Đối tác slideshow
+let slidesDoiTac = document.getElementsByClassName("doitac__img");
+let arrows = document.getElementsByClassName("section__doitac__nav");
+console.log(arrows);
+const startDoiTacArr = [0, 5, 10, 13];
+let count = 0;
+//   #383d40 màu khi nav bình thường
+
+arrows[0].style.background = "#383d40";
+arrows[1].style.background = "#15cca3";
+
+const slidesDoiTacFunct = function (current) {
+  if (current === 0) {
+    arrows[0].style.background = "#383d40";
+  } else if (current === 13) {
+    arrows[1].style.background = "#383d40";
+  } else {
+    // kích active cả 2 button
+    arrows[0].style.background = "#15cca3";
+    arrows[1].style.background = "#15cca3";
+  }
+  for (let i = 0; i < slidesDoiTac.length; i++) {
+    slidesDoiTac[i].classList.add("hidden");
+  }
+  if (current < 13) {
+    if (current < 0) {
+      current = 0;
+      arrows[0].style.background = "#383d40";
+    }
+    for (let i = current; i < current + 5; i++) {
+      slidesDoiTac[i].classList.remove("hidden");
+    }
+  } else {
+    arrows[1].style.background = "#383d40";
+    for (let i = 12; i < current + 5; i++) {
+      slidesDoiTac[i].classList.remove("hidden");
+    }
+  }
+};
+const currentDoiTac = function () {
+  for (let i = 0; i < startDoiTacArr.length; i++) {
+    console.log(!slidesDoiTac[startDoiTacArr[i]].classList.contains("hidden"));
+    if (!slidesDoiTac[startDoiTacArr[i]].classList.contains("hidden"))
+      return startDoiTacArr[i];
+  }
+  return 0;
+};
+const rightClick = function () {
+  const currentSlide = currentDoiTac() + 5;
+  slidesDoiTacFunct(currentSlide);
+};
+const leftClick = function () {
+  const currentSlide = currentDoiTac() - 5;
+  slidesDoiTacFunct(currentSlide);
+};

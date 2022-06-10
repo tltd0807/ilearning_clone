@@ -513,14 +513,15 @@ label {
   transform: rotate(0.5turn);
 }
 .news_body {
-  padding: 0 250px;
+  padding: 0 220px;
   margin-bottom: 50px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .news_tag__container {
-  /* height: 320px; */
+  height: 250px;
+  width: 280px;
   background-color: rgb(6, 6, 6);
   border-radius: 10px;
   margin-bottom: 20px;
@@ -536,6 +537,46 @@ label {
   border-radius: 10px;
 }
 .news_tag__info {
-  font-size: 1.1rem;
+  width: 99%;
+  font-size: 0.91rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 36px;
 }
 /* còn thiêu ở tab 5 mấy chữ bị overflow đổi thành ... và model khi click vào tab */
+
+.section__doitac {
+  width: 80%;
+  padding: 40px 30px;
+  margin: 0 auto 60px;
+  background-color: rgb(6, 6, 6);
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.section__doitac__nav {
+  background-color: #383d40;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 48%;
+  margin: 10px;
+}
+
+.doitac__nav--right {
+  transform: rotate(180deg);
+}
+.doitac__img {
+  border-radius: 10px;
+  width: 175px;
+  height: 100px;
+  margin: 0 30px;
+  background-color: white;
+}
+.section__doitac__body {
+  display: flex;
+  overflow: hidden;
+}
